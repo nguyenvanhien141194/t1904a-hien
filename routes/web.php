@@ -11,6 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+
+Route::get("/","WebController@homefoods");
+Route::get("/shop","WebController@shop");
+Route::get("/product","WebController@productDetail");
